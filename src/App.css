@@ -1,0 +1,64 @@
+.exercise-row {
+  display: flex;
+  align-items: center;
+
+  height: 120px;
+  font-size: 52px;
+  padding: 0 40px;
+}
+
+.exercise-name {
+  flex: 1;
+}
+
+.exercise-weight {
+  flex: 1;
+  text-align: right;
+}
+
+.exercise-since {
+  flex: 1;
+  text-align: right;
+}
+
+.exercise-add {
+  flex: 1;
+  text-align: right;
+}
+
+.exercise-add-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.exercise-add-container > * {
+  flex: 1;
+  text-align: center;
+}
+
+.weight-input {
+  width: 200px;
+}
+.button {
+  transition-duration: 200ms;
+
+  cursor: pointer;
+}
+.button:hover {
+  color: grey;
+}
+.button:active {
+  transform: scale(0.96);
+}
+
+input {
+  border: none;
+  border-bottom: solid 5px black;
+  background: none;
+  font-family: Oswald, sans-serif;
+  font-size: 52px;
+}
+input:focus {
+  outline: none;
+}
