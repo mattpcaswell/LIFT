@@ -1,45 +1,39 @@
-.exercise-row {
-  display: flex;
-  align-items: center;
-
-  height: 120px;
-  font-size: 52px;
+.exercise-grid {
+  display: grid;
+  grid-auto-rows: 100px;
+  grid-template-columns: 25% 15% 30% 30%;
   padding: 0 40px;
-}
 
-.exercise-name {
-  flex: 1;
+  align-items: center;
+  font-size: 32px;
 }
 
 .exercise-weight {
-  flex: 1;
   text-align: right;
 }
 
 .exercise-since {
-  flex: 1;
   text-align: right;
 }
 
 .exercise-add {
-  flex: 1;
   text-align: right;
 }
 
 .exercise-add-container {
-  flex: 1;
   display: flex;
   align-items: center;
 }
 
-.exercise-add-container > * {
-  flex: 1;
-  text-align: center;
+.weight-input {
+  text-align: right;
 }
 
-.weight-input {
-  width: 200px;
+.exercise-add-container > * {
+  flex: 1;
+  text-align: right;
 }
+
 .button {
   transition-duration: 200ms;
 
@@ -57,7 +51,7 @@ input {
   border-bottom: solid 5px black;
   background: none;
   font-family: Oswald, sans-serif;
-  font-size: 52px;
+  font-size: 32px;
 }
 input:focus {
   outline: none;

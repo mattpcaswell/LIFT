@@ -34,7 +34,7 @@ class NewExercise extends Component {
 
     render() {
         return (
-            <div className="exercise-row">
+            <React.Fragment>
                 <div className="button" onClick={() => this.newExercise()}>New...</div>
 
                 {this.state.addingExercise && <div className="new-exercise-bar">
@@ -42,7 +42,7 @@ class NewExercise extends Component {
                     <div className="new-exercise-bar-button button" onClick={this.add}>Add</div>
                     <div className="new-exercise-bar-button button" onClick={this.exit}>X</div>
                 </div>}
-            </div>
+            </React.Fragment>
         );
     }
 }
